@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FahmiController;
+use App\Http\Controllers\FahmiGambarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/fahmi', [FahmiController::class, 'index']);
+Route::get('/fahmigambar', [FahmiGambarController::class, 'index']);
